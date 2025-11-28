@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Al-Radhan | Portfolio</title>
+    
+    <meta name="description" content="Mohammed Al-Radhan - Senior System Analyst & Computer Engineer based in Kuwait. Specializing in Cybersecurity, Python Automation, Java Full Stack, and Network Infrastructure.">
+    <meta name="keywords" content="Mohammed Al-Radhan, System Analyst, SOC Analyst, Cyber Security, Python Automation, Java Developer, Full Stack, REST API, SOAP, Network Infrastructure, Computer Engineering, Kuwait">
+    <meta name="author" content="Mohammed Al-Radhan">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+    <div class="glow-spot glow-1"></div>
+    <div class="glow-spot glow-2"></div>
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav>
+        <div class="logo">
+            <img src="pic.png" alt="Logo">
+            <span class="logo-text">Al-Radhan</span>
+        </div>
+        
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#education" onclick="toggleMenu()">Education</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+            
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        
+        <div class="hero-wrapper">
+            
+            <h1>Mohammed <br><span>Al-Radhan</span></h1>
+
+            <div class="code-box">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div style="white-space: pre; line-height: 1.6;">
+<span class="c-purple">@dataclass</span>
+<span class="c-purple">class</span> <span class="c-yellow">Profile</span>:
+    <span class="c-white">user</span>: <span class="c-blue">str</span> = <span class="c-green">"Mohammed"</span>
+    <span class="c-white">role</span>: <span class="c-blue">str</span> = <span class="c-green">"Sys. Analyst"</span>
+    <span class="c-white">stack</span>: <span class="c-blue">list</span> = [
+        <span class="c-green">"Python"</span>,
+        <span class="c-green">"Java"</span>,
+        <span class="c-green">"SQL"</span>
+    ]
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bio-container">
+            <p class="bio-text delay-1">
+                I am a System Analyst with hands-on experience in networking, cybersecurity, and software development. I have worked as an integration developer, monitoring, analyzing, and SOC analyst responding to security incidents, and helping strengthen the overall security posture of the environments I support.
+            </p>
+            <p class="bio-text delay-2">
+                My technical background spans network infrastructure, coding, and automation using Python to optimize operations. As a full stack developer using Java, I design backend services and build APIs (REST and SOAP) that integrate critical business applications.
+            </p>
+        </div>
+
+        <a href="#contact" class="btn-glow">Get In Touch</a>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2><div class="line"></div>
+        </div>
+        <div class="card-wrap" style="max-width: 900px; margin: 0 auto;">
+            <div class="card" style="text-align: center;">
+                <div class="card-content">
+                    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-gray);">
+                        "A highly motivated Computer Engineer with expertise in backend development, API integration, database management, and hardware/software support. Passionate about AI, Robotics, and building secure, scalable systems."
+                    </p>
+                    <br>
+                    <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+                        <span style="border:1px solid var(--primary); padding:8px 24px; border-radius:4px; color:var(--primary); font-size:0.9rem; font-weight:500;">SQL</span>
+                        <span style="border:1px solid var(--secondary); padding:8px 24px; border-radius:4px; color:var(--secondary); font-size:0.9rem; font-weight:500;">Python</span>
+                        <span style="border:1px solid var(--text-white); padding:8px 24px; border-radius:4px; color:var(--text-white); font-size:0.9rem; font-weight:500;">Java</span>
+                        <span style="border:1px solid var(--text-gray); padding:8px 24px; border-radius:4px; color:var(--text-white); font-size:0.9rem; font-weight:500;">IT Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-header">
+            <h2>Experience</h2><div class="line"></div>
+        </div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Senior System Analyst & IT Support</h3>
+                        <h4>Enmaa Real Estate | Dec 2023 - Present</h4>
+                        <ul>
+                            <li>Managing and analyzing IT systems and providing technical support.</li>
+                            <li>Identifying system requirements and evaluating current systems.</li>
+                            <li>Liaising with users to track additional requirements and features.</li>
+                            <li>Ensuring deadline and budget requirements are met.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Integration Developer</h3>
+                        <h4>Boubyan Bank | Sep 2021 - Dec 2023</h4>
+                        <ul>
+                            <li>Coordinated with developers to ensure integration projects completed on time.</li>
+                            <li>Developed custom APIs and messaging protocols.</li>
+                            <li>Identified, debugged, and advised on system errors and architecture issues.</li>
+                            <li>Participated in testing and deployment of integration solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2><div class="line"></div>
+        </div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-shield-alt" style="font-size:2rem; color:var(--primary); margin-bottom:15px;"></i>
+                        <h3>Secure Communication System</h3>
+                        <h4>Graduation Project</h4>
+                        <p>Designed a secure system focusing on encrypted data transmission and network safety protocols.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-brain" style="font-size:2rem; color:var(--secondary); margin-bottom:15px;"></i>
+                        <h3>J.A.R.V.I.S AI Assistant</h3>
+                        <h4>Python & Automation</h4>
+                        <p>A voice-controlled personal assistant capable of system automation, web scraping, and intelligent voice interaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-robot" style="font-size:2rem; color:var(--text-white); margin-bottom:15px;"></i>
+                        <h3>Robotics Control System</h3>
+                        <h4>Inverse Kinematics</h4>
+                        <p>Real-time control interface for robotic arms featuring motor synchronization and data visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-header">
+            <h2>Education & Certs</h2><div class="line"></div>
+        </div>
+        <div class="list-grid">
+            <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">Bachelor of Science: Computer Engineering</h3>
+                    <p style="color:var(--text-gray);">American University of Middle East (AUM) | 2015 - 2021</p>
+                </div>
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">System Architect Essentials</h3>
+                    <p style="color:var(--text-gray);">Pega Academy</p>
+                </div>
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">Business Architect Essentials</h3>
+                    <p style="color:var(--text-gray);">Pega Academy</p>
+                </div>
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">Cisco Certified Network Associate (CCNA)</h3>
+                    <p style="color:var(--text-gray);">Cisco</p>
+                </div>
+                <i class="fas fa-network-wired"></i>
+            </div>
+             <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">Object-Oriented Design</h3>
+                    <p style="color:var(--text-gray);">Software Development Cert</p>
+                </div>
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="list-item">
+                <div>
+                    <h3 style="color:var(--text-white);">Programming in HTML5 with JS and CSS3</h3>
+                    <p style="color:var(--text-gray);">Web Development Certification</p>
+                </div>
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <h2>Let's Connect</h2><div class="line"></div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-item"><i class="fas fa-envelope"></i> msalradhan@outlook.com</div>
+            <div class="contact-item"><i class="fas fa-phone"></i> +965 50113371</div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i>Kuwait</div>
+            <br>
+            <a href="mailto:msalradhan@outlook.com" class="btn-glow">Send Message</a>
+            
+            <div class="social-container">
+                <a href="https://github.com/ByteLife01" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-al-radhan/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/bytelife01" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/96550113371" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Mohammed Al-Radhan © 2025 | Professional Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89CDQVWJS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89CDQVWJS7');
+</script>
+</body>
+</html>
