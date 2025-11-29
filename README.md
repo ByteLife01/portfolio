@@ -40,3 +40,11 @@ A high-performance, responsive personal portfolio website designed for a System 
 ├── script.js       # Logic for animations, mobile menu, and theme toggle
 ├── pic.png         # Profile logo/image
 └── README.md       # Project documentation
+📬 Contact
+Author: Mohammed Al-Radhan
+
+Email: msalradhan@outlook.com
+
+LinkedIn: Mohammed Al-Radhan
+
+GitHub: ByteLife01
